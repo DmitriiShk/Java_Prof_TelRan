@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Main {
     public static Integer findFirstElementWithKOccurrences(int[] arr, int k) {
+
         HashMap<Integer, Integer> countMap = new HashMap<>();
 
         // Подсчитываем количество вхождений каждого элемента
