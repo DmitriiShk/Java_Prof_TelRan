@@ -24,7 +24,7 @@ public class Task3 {
         // .findFirst().toString();
 
         //Чтобы убрать Optional в выводе.
-        String secondToLast = fullNames.stream().sorted().skip(fullNames.size() - 2)
+        String secondToLast = sortedNames.stream().sorted().skip(fullNames.size() - 2)
                 .findFirst().orElse("Not Found");
 
         //Или такой вариант:

@@ -1,8 +1,7 @@
-package PracticeLessons.Lesson_191124;
+package PracticeLessons.Lesson_191124.Task1;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class NumPowerSumTask {
 
@@ -14,15 +13,12 @@ public class NumPowerSumTask {
         // Получение списка квадратов чисел
         List<Integer> squares = numbers.stream().map(number -> number * number)
                                .toList();
-
         // Вывод результата
         System.out.println("List of squares: " + squares);
-
         // Получение суммы квадратов чисел
         int sumOfSquares = numbers.stream()
                            .mapToInt(number -> number * number)
                            .sum();
-
         // Вывод результата
         System.out.println("Sum of squares: " + sumOfSquares);
 

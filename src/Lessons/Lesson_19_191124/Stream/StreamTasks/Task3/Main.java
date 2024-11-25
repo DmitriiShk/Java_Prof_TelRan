@@ -18,8 +18,8 @@ public class Main {
         olderEmployees.forEach(employee -> System.out.println(employee));
         System.out.println();
 
-        List<Employee> otherEmployees = employees.stream().filter(employee -> employee.getWorkingHoursInMonth()>300).
-                                        filter(employee -> employee.getName().startsWith("I")).toList();
+        List<Employee> otherEmployees = employees.stream().filter(employee -> employee.getWorkingHoursInMonth()>300 &&
+                                                                  employee.getName().startsWith("I")).toList();
         System.out.println(otherEmployees);
 
         List<String> surnamesOfIvan = employees.stream().filter(employee -> employee.getName().equals("Ivan")).
@@ -27,8 +27,8 @@ public class Main {
 
         System.out.println("Surnames of Ivan = " + surnamesOfIvan);
 
-        List<String> uniqueNames = employees.stream().distinct().map(employee -> employee.getName()).toList();
-        uniqueNames.forEach(employee -> System.out.println(employee));
+        List<String> uniqueNames = employees.stream().distinct().map(Employee::getName).toList();
+        uniqueNames.forEach(System.out::println);
         
     }
 

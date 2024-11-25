@@ -1,4 +1,4 @@
-package PracticeLessons.Lesson_191124;
+package PracticeLessons.Lesson_191124.Task1;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -6,10 +6,11 @@ import java.util.stream.Stream;
 
 public class ListMerge {
 
-    // Задача 15: Объединение двух списков в один
+
 
     public static void main(String[] args) {
 
+     // Объединение двух списков в один
         List<Integer> list1 = Arrays.asList(1, 2, 3);
         List<Integer> list2 = Arrays.asList(4, 5, 6);
 
