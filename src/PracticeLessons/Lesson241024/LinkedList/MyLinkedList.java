@@ -1,10 +1,10 @@
 package PracticeLessons.Lesson241024.LinkedList;
 
-import lombok.Getter;
-import lombok.Setter;
+//import lombok.Getter;
+//import lombok.Setter;
 
-@Setter
-@Getter
+//@Setter
+//@Getter
 public class MyLinkedList {
 
     private int num;
